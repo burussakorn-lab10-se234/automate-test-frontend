@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  backend:
+    image: dto80/234-lab11
+    ports:
+      - "8085:8080"
+  frontend:
+    image: burussakorn45/anyname
+    ports:
+      - "8086:80"
