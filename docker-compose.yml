@@ -1,9 +1,13 @@
 version: '3.3'
 services:
   backend:
-    image: dto80/234-lab11
+    image: dto80/234-lab11:latest
     ports:
       - "8091:8080"
+    volumes:
+      - type: bind
+        source: /home/ubuntu/xxx
+        target: /data
   frontend:
     image: burussakorn45/anyname
     ports:
